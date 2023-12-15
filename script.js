@@ -200,7 +200,7 @@ countryInput.addEventListener("input", function () {
 
     suggestionItem.addEventListener("click", function () {
       countryInput.value = country;
-      suggestionsList.innerHTML = ""; // Clear the suggestions after selection
+      suggestionsList.innerHTML = ""; // Clear the suggestions after
     });
   });
 });
@@ -211,6 +211,8 @@ let country = document.getElementById("country");
 
 searchBtn.addEventListener("click", () => {
   let countryName = country.value;
+
+  country.value = "";
 
   if (countryName == "Israel") {
     result.innerHTML = `<h3>No Country Found</h3>`;
