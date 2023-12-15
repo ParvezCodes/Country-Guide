@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --text-color: #222a43;
+  --main-color: #14171a;
+  --icon-color: #14171a;
+  --navbar-color: #14171a;
+  --logo-color: #e1e8ed;
+  --body-color: #e1e8ed;
+  --secondary-color: #657786;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+/* NavBar */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+  background-color: var(--navbar-color);
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--logo-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo a span {
+  color: var(--secondary-color);
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 4em 1.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 50%;
+  border-radius: 0.62rem;
+  box-shadow: 0 1.25rem 1.8rem rgba(8, 21, 65, 0.5);
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 0.5em;
+}
+
+.search-box button {
+  font-size: 1em;
+  background-color:var(--secondary-color);
+  color: rgb(255, 255, 255);
+  padding: 0.8em 0.4em;
+  border: none;
+  border-radius: 1.1em;
+}
+
+.search-box input {
+  font-size: 1em;
+  padding: 0 0.62em;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  outline: none;
+  color: var(--text-color);
+}
+
+#result {
+  margin-top: 1.25em;
+}
+
+.container .flag-img {
+  display: block;
+  width: 40%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
+
+.container h2 {
+  font-weight: 600;
+  color: #222a43;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.8em;
+}
+
+.data-wrapper {
+  margin-bottom: 1em;
+  letter-spacing: 0.3px;
+}
+
+.container h4 {
+  display: inline;
+  font-size: 500;
+  color: var(--text-color);
+}
+
+.container span {
+  color: #5d6274;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #ff465a;
+}
+
+#suggestions {
+  list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    top: 48%; /* Adjust the value as needed */
+  }
+
+  .search-box{
+  grid-template-columns: 6fr 4fr;
+  }
+}
+
+

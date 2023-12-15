@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2d83fcf070.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Country Guide</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="index.html">Country<span>Guide</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="country" placeholder="Enter country name..." />
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <ul id="suggestions"></ul>
+      </div>
+      <div id="result"></div>
+    </div>
+    <div class="portfolio"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
