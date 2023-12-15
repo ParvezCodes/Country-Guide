@@ -46,6 +46,10 @@ nav {
   list-style: none;
 }
 
+.logo a i{
+  color: var(--logo-color);
+}
+
 .logo a span {
   color: var(--secondary-color);
 }
